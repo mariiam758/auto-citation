@@ -1,0 +1,36 @@
+auto_citation_project/
+│
+├── articles/                       # Raw article texts or sample Wikipedia content
+│   ├── article_1.txt               # e.g., "Ethical concerns in AI"
+│   └── article_2.txt               # e.g., "Social impacts of climate change"
+│
+├── keywords/     AUTO                  # Extracted keywords using RAKE/YAKE/BERTScore
+│   ├── article_1_keywords_rake.json
+│   ├── article_1_keywords_yake.json
+│   └── article_2_keywords_bert.json
+│
+├── references_raw/      AUTO           # Raw metadata from APIs (OpenAlex, Crossref, etc.)
+│   ├── article_1_references_openalex.json
+│   └── article_2_references_crossref.json
+│
+├── citations_formatted/        AUTO   # Final formatted citations (APA/MLA/Chicago)
+│   ├── article_1_apa.txt
+│   ├── article_1_mla.txt
+│   ├── article_1_chicago.txt
+│   ├── article_2_apa.txt
+│   └── ...
+│
+├── scripts/                        # Python scripts to extract keywords, fetch refs, format citations
+│   ├── extract_keywords.py         # RAKE, YAKE, BERTScore implementations
+│   ├── fetch_references.py         # API clients for OpenAlex, Crossref, Semantic Scholar
+│   ├── format_citations.py         # Convert JSON to APA/MLA/Chicago strings
+│   ├── generate_diagram.py
+│   ├── generate_pipeline_graph.py
+│   └──  json_to_bibtex.py          # Optional: convert citation metadata to .bib
+│                    
+├── diagrams/            AUTO           # Visual representation of your system pipeline
+│   └── pipeline_diagram.png        
+│ 
+├── app.py                          # streamlit ui 
+├── README.md                       # Project explanation, setup instructions
+└── requirements.txt                # Python dependencies (rake-nltk, yake, requests, etc.)

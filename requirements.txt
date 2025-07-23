@@ -1,0 +1,9 @@
+streamlit
+openai
+requests
+tqdm
+scikit-learn
+nltk
+plotly
+typing
+networkx
