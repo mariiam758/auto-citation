@@ -11,7 +11,7 @@ This project is a multi-step citation generation pipeline that takes an article,
 pip install -r requirements.txt
 ```
 
-### 2. Add article
+### (Optional)2. Add article
 Put your .txt file in the articles/ folder. For example:
 
 ```bash
@@ -27,7 +27,7 @@ streamlit run app.py
 
 ### 4. Use the Interface
 
-Select an article from the dropdown.
+Select an article from the dropdown Or upload a new article text file
 
 Click buttons in order:
 
