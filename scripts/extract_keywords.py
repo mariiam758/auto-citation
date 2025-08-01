@@ -62,8 +62,8 @@ if __name__ == "__main__":
     print("Extracting YAKE keywords...")
     yake_keywords = extract_yake(text)
     print("Generating candidate phrases for BERTScore...")
-    # As a simple candidate phrase set for BERTScore, use rake keywords here
-    bert_keywords = extract_bert_keywords(text, rake_keywords)
+    # As a simple candidate phrase set for BERTScore, used both rake and yake keywords here
+    bert_keywords = extract_bert_keywords(text, rake_keywords + yake_keywords)
     
     results = {
         "rake": rake_keywords,
